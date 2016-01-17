@@ -99,9 +99,8 @@ public class Kalendar {
 				c = in.nextInt();
 			// if input is incorrect type etc. letters
 			} catch (InputMismatchException e) {
-				System.out.println("Wrong input!");
-				System.out.println("\nEND");
-				System.exit(1);
+				System.out.println("Wrong input!\nTry again: ");
+				in.nextLine();
 			}
 			// when input is 0 end the program
 			if (c == 0) {
@@ -118,9 +117,8 @@ public class Kalendar {
 					try {
 						c = in.nextInt();
 					} catch (InputMismatchException e) {
-						System.out.println("Wrong input!");
-						System.out.println("\nEND");
-						System.exit(1);
+						System.out.println("Wrong input!\nTry again: ");
+						in.nextLine();
 					}
 					if (c == 0) {
 						System.out.println("END");
@@ -237,9 +235,8 @@ public class Kalendar {
 						}
 					}
 				} catch (InputMismatchException e) {
-					System.out.println("Wrong input!");
-					System.out.println("\nEND");
-					System.exit(1);
+					System.out.println("Wrong input!\nTry again: ");
+					in.nextLine();
 				}
 			}
 
