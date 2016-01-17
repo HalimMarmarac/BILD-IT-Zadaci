@@ -90,7 +90,7 @@ public class Kalendar {
 		File f = new File("notes.txt");	// creates file with notes
 		int c = 3; // just for do/while
 		do {
-			// display menu
+			// display menu rotating while not 0 or wrong input
 			System.out.println("\n\nCalendar -> 1");
 			System.out.println("View notes -> 2");
 			System.out.println("Exit -> 0");
@@ -102,30 +102,13 @@ public class Kalendar {
 				System.out.println("Wrong input!\nTry again: ");
 				in.nextLine();
 			}
+			
 			// when input is 0 end the program
 			if (c == 0) {
 				System.out.println("END");
 				System.exit(1);
 			}
-			if (c < 0 || c > 2) {
-				// this while loop is for displayin menu after any operation
-				while (c < 0 || c > 2) {
-					System.out.println("\n\nCalendar -> 1");
-					System.out.println("View notes -> 2");
-					System.out.println("Exit -> 0");
-					System.out.println("\nCHOICE: ");
-					try {
-						c = in.nextInt();
-					} catch (InputMismatchException e) {
-						System.out.println("Wrong input!\nTry again: ");
-						in.nextLine();
-					}
-					if (c == 0) {
-						System.out.println("END");
-						System.exit(1);
-					}
-				}
-			}
+
 			// menu option #1
 			if (c == 1) {
 				try {
