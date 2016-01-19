@@ -18,7 +18,7 @@ public class Zadatak5 {
 		while (q) {
 			// unos brojeva od korisnika
 			// ukoliko unesemo 0 prekidmo unos ili dodjemo do max ogranicenja brojeva za unos
-			while((i < 100)) { 
+			while((i > 0)) { 
 				try {
 					System.out.println("Unesite broj(0 za prekid): ");
 					i = in.nextInt();
