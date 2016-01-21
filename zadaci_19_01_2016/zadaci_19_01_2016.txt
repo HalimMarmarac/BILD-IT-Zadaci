@@ -1,0 +1,24 @@
+﻿Zadaci
+
+1. Pretpostavimo da uplatimo $100 svaki mjesec na štedni račun koji ima godišnju interesnu stopu od 5%. 
+Mjesečna interesna stopa je stoga 0.05 / 12 = 0.00417. 
+Nakon prvog mjeseca vrijednost na računu postaje 100 * (1 + 0.00417) = 100.417. 
+Nakon drugog mjeseca, vrijednost na računu postaje (100 + 100.417) * (1 + 0.00417) = 201.252. 
+Nakon trećeg mjeseca, vrijednost na računu postaje (100 + 201.252) * (1 + 0.00417) = 302.507 i tako dalje. 
+Napisati program koji pita korisnika da unese mjesečni iznos štednje te broj mjeseci nakon kojeg bi želio znati 
+stanje računa. 
+
+2.  Napisati program koji simulira nasumično izvlačenje karte iz špila od 52 karte. Program treba ispisati koja 
+karta je izvučena (A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q ili K) te znak u kojem je data karta 
+(Srce, Pik, Djetelina, Kocka). Primjer: Karta koju ste izvukli je 10 u znaku kocke.
+
+3. Napisati program koji pita korisnika da unese 2 stringa te ispisuje najveći zajednički prefix za ta dva stringa, 
+ukoliko isti postoji. 
+Na primjer, ukoliko korisnik unese sljedeća dva stringa "Dobrodošli u Dubai" i "Dobrodošli u Vankuver" program 
+treba da ispiše: Najveći zajednički prefix za dva stringa je "Dobrodošli u". 
+
+4. Napisati program koji prima 10 cijelih brojeva te ih ispisuje u obrnutom redosljedu. 
+
+5. Napisati metodu koja broji slova u stringu. Metoda treba koristiti sljedeći header: 
+public static int countLetters(String s). Napisati program koji pita korisnika da unese neki string te mu vrati 
+koliko taj string ima slova.

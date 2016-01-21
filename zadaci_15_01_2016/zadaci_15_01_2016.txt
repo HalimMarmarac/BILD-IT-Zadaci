@@ -1,0 +1,23 @@
+﻿Zadaci
+
+1. Napisati sljedeću metodu koja vraća najveću vrijednosti u ArrayListu Integera. Metoda vraća null ukoliko 
+je lista null iil ukoliko lista sadrži 0 elemenata.
+public static Integer max(ArrayList<Integer> list)
+
+2. Pretpostavimo da su slova A, E, I, O i U samoglasnici. (Smjela pretpostavka, znam) Napisati program koji
+pita korisnika da unese string te mu ispište broj samoglasnika i suglasnika u datom stringu.
+
+3. Napisati metodu koja prima dva cijela broja kao argumente te vraća najveći zajednički djelilac za ta dva broja.
+
+PRIMJER:
+
+Unesite prvi broj: 125
+Unesite drugi broj: 2525
+Najveći zajednički djelilac za brojeve 125 i 2525 je 25.
+
+
+4. Napišite program koji generiše 100 nasumičnih cijelih brojeva između 0 i 9 te ispisuje koliko se puta koji 
+broj ponovio.
+
+5. Napisati program koji učitava niz brojeva, pronalazi najveći broj te ispisruje koliko se puta taj broj 
+ponavlja. Pretpostavimo da se unos brojeva završava sa nulom.

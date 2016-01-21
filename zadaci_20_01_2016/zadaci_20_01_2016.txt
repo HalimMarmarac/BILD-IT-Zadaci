@@ -1,0 +1,25 @@
+﻿Zadaci
+
+1. Napisati program koji učitava iznos investicije, godišnju interesnu stopu i broj godina te vraća buduću 
+vrijednost investicije koristeći se sljedećom formulom: 
+buducaVrijednostInvesticije = iznosInvesticije * (1 + mjesecnaInteresnaStopa)^brojGodina*12. 
+Na primjer, ukoliko uneste kao iznos investicije 1000, 3.25 kao godišnju interesnu stopu i 1 kao broj godina 
+program vam vraća 1032.98 kao buducu vrijednost investicije.
+
+2. Napisati program koji ispisuje sve prijestupne godine, 10 po liniji, u rasponu godina koje korisnik unese. 
+Program pita korisnika da unese početnu godinu, krajnju godinu te ispisuje sve godine u tom rasponu. 
+Razmak između godina treba biti jedan space. 
+
+3. Napisati metode sa sljedećim headerima: public static int reverse(int number) i 
+public static boolean isPalindrome(int number). Prva metoda prima cijeli broj kao argument i vraća isti 
+ispisan naopako. (npr. reverse(456) vraća 654.) Druga metoda vraća true ukoliko je broj palindrom a false 
+ukoliko nije. Koristite reverse metodu da implementirate isPalindrome metodu. Napišite program koji pita 
+korisnika da unese broj te mu vrati da li je broj palindrome ili ne. 
+
+4. Napisati program koji pita korisnika da unese neki string te mu ispisuje sve karaktere koji se nalaze na 
+neparnim pozicijama. Na primjer, ako korisnik unese string Beijing Chicago, program vraća BiigCiao.
+
+5. Ako imamo ubrzanje aviona a te brzinu pri kojoj avion uzlijeće v, možemo izračunati minimalnu dužinu piste 
+potrebne da avion uzleti koristeći se sljedećom formulom: dužina = v * v / 2a. Napisati program koji pita 
+korisnika da unese v u m/s i a u m/s² te ispisuje korisniku minimalnu dužinu piste. 
+(Primjer: ukoliko unesemo 60 za brzinu i 3.5 za ubrzanje dužina piste je 514.286)

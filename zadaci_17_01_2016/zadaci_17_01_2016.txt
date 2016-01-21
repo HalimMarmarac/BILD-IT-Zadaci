@@ -1,0 +1,33 @@
+﻿Zadaci
+
+1. Napisati metodu koja prima 2 argumenta: početni broj i krajnji broj te printa sve proste brojeve u zadanom rangu.
+BONUS: metoda može primati i treći argument, broj brojeva za isprintati po liniji.
+
+2. Napisati metodu koja nalazi najmanji element u nizu decimalnih vrijednosti koristeći se sljedećim headerom:
+
+public static double min(double[ ] array)
+
+Napišite potom test program koji pita korisnika da unese deset brojeva te poziva ovu metodu da vrati najmanji element u nizu.
+
+
+3. Nizovi niz1 i niz2 su striktno identični ukoliko su svi njihovi elementi na istim pozicijama jednaki. 
+Napisati metodu koja vraća true ukoliko su nizovi niz1 i niz2 striktno identični. Koristiti sljedeći header:
+
+public static boolean equals(int[ ] niz1, int[ ] niz2)
+
+Napisati testni program koji pita korisnika da unese dva niza cijelih brojeva te provjerava da li su striktno identični.
+
+
+4. Napisati metodu koja vraća lokaciju najvećeg elementa u 2D nizu. Metoda treba da koristi sljedeći header:
+
+public static int[ ] locateLargest(double[ ][ ] a)
+
+Napisati test program koji pita korisnika da unese 2D niz te mu ispisuje lokaciju najvećeg elementa u nizu.
+
+
+5. Implementirati sljedeću metodu da sortira redove u 2D nizu.
+
+public static double[ ][ ] sortRows(double[ ][ ] array)
+
+Napisati testni program koji pita korisnika da unese 3x3 matricu (ili da pita korisnika koliku matricu želi unijeti) 
+te mu ispisuje na konzoli matricu sa sortiranim redovima - od najmanjeg broja do najvećeg.

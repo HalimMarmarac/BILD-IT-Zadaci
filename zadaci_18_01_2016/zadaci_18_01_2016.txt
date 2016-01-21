@@ -1,0 +1,22 @@
+﻿Zadaci
+
+1. Napisati program koji pita korisnika da unese neki cijeli broj te ispisuje njegove najmanje faktore u rastućem 
+redosljedu. Na primjer, ukoliko korisnik unese 120 program treba da ispiše 2, 2, 2, 3, 5. (2 * 2 * 2 * 3 * 5 = 120)
+
+2.  ISBN-10 (International Standard Book Number) se sadrži od 10 brojeva: d1 d2 d3 d4 d5 d6 d7 d8 d9 d10. 
+Posljednji broj, d10, služi kao checksum i njega izračunavamo iz prvih devet brojeva koristeći se sljedećom 
+formulom: (d1 * 1 + d2 * 2 + d3 * 3 + d4 * 4 + d5 * 5 + d6 * 6 + d7 * 7 + d8 * 8 + d9 * 9) % 11. 
+Ukoliko je checksum 10, zadnji broj označavamo sa X u skladu sa ISBN-10 konvencijom. 
+Napisati program koji pita korisnika da unese prvih 9 brojeva te ispiše desetocifreni ISBN-10 broj. 
+(Primjer: ukoliko unesemo, kao prvih 9 brojeva, 013601267 program nam ispisuje 0136012671 kao ISBN-10 broj. 
+Ukoliko unesemo 013031997 kao prvih 9 brojeva, program nam ispisuje 013031997X kao ISBN-10 broj)
+
+3. Napisati metodu sa sljedećim headerom koja ispisuje tri broja u rastućem redosljedu: 
+public static void displaySortedNumbers(double num1, double num2, double num3).
+Napisati program koji pita korisnika da unese tri broja te ispiše ta tri broja u rastućem redosljedu. 
+
+4. Napisati metodu koja printa 100 nasumičnih uppercase karaktera i 100 nasumičnih brojeva, 10 po liniji.
+
+5. Napisati program koji učitava neodređeni broj cijelih brojeva (nula prekida unos) te ispisuje koliko je 
+brojeva bilo iznad ili jednako prosjeku svih unešenih brojeva a koliko je bilo brojeva ispod prosjeka. 
+Pretpostavimo da je maksimalan niz brojeva koje korisnik može unijeti 100.
