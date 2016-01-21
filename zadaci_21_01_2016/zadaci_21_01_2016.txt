@@ -1,0 +1,26 @@
+﻿Zadaci 
+
+1. Napisati program koji ispisuje tri nasumična cijela broja te pita korisnika da unese njihov zbir. 
+Ukoliko korisnik pogriješi, program ispisuje pitanje ponovo sve sa porukom da pokuša ponovo. 
+Ukoliko korisnik unese tačan odgovor, program mu čestita i završava sa radom. 
+
+2. Napisati program koji pita korisnika da unese mjesec i godinu te mu ispiše broj dana u datom mjesecu. 
+Na primjer, ukoliko korisnik unese kao godinu 2012 a kao mjesec 2, program treba ispisati da je 
+Februar 2012 imao 29 dana. Ukoliko korisnik unese kao godinu 2015 a kao mjesec 3, program treba ispisati da je
+Mart 2015 imao 31 dan. 
+
+3. Napisati program koji pita korisnika da unese godinu i prva tri slova imena mjeseca (prvo slovo uppercase) 
+te mu ispiše broj dana u tom mjesecu. Na primjer, ukoliko korisnik kao godinu unese 2001 a kao mjesec Jan 
+program mu ispisuje da Jan 2011 ima 31 dan.
+
+4. Pozitivni cijeli broj je savršen broj ukoliko je jednak zbiru svih svojih pozitivnih djelilaca, isključujući 
+sebe. Na primjer, 6 je prvi savršeni broj jer 6 = 3 + 2 + 1. Sljedeći savršeni broj 
+je 28 jer 28 = 14 + 7 + 4 + 2 + 1. Samo 4 savršena broja postoje u rasponu od 0 do 10.000. 
+Napišite program koji ispisuje sva 4.
+
+5. Neke web stranice forsiraju određena pravila za passworde. Napisati metodu koja provjerava da li je 
+unijeti string validan password. Pravila da bi password bio validan su sljedeća: 1. Password mora biti 
+sačinjen od najmanje 8 karaktera. 2. Password smije da se sastoji samo od slova i brojeva. 3. 
+Password mora sadržati najmanje 2 broja. Napisati program koji pita korisnika da unese password te mu 
+ispisuje "password je validan" ukoliko su sva pravila ispoštovana ili "password nije validan" ukoliko 
+pravila nisu ispoštovana.
