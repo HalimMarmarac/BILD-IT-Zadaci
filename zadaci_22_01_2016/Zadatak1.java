@@ -53,14 +53,10 @@ public class Zadatak1 {
 				in.nextLine();
 			}
 		}
+		
 		// ispis rezultata
-		if ((dan + dan1) < 7) {
-			System.out.println("\nDanas je " + dani[dan] + " a dan u buducnosti je " + dani[(dan + dan1)] + ".");
-		}
-		else {
-			System.out.println("\nDanas je " + dani[dan] + " a dan u buducnosti je "
-								+ dani[(dan + dan1) % 7] + ".");
-		}
+		System.out.println("\nDanas je " + dani[dan] + " a dan u buducnosti je " + dani[(dan + dan1) % 7] + ".");
+
 		in.close();
 	}
 
