@@ -62,7 +62,7 @@ public class Zadatak2 {
 		while (q) {
 			try {
 				// unos g sirine za 2. tacku
-				System.out.println("Unesite geografsku duzinu tacke 2 (y2): ");
+				System.out.println("Unesite geografsku sirinu tacke 2 (y2): ");
 				y2 = Math.toRadians(in.nextDouble());
 				q = false;
 
