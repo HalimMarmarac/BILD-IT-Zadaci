@@ -12,8 +12,8 @@ public class Zadatak2 {
 												// konzole
 
 		double x1 = 0; // geografska duzina za 1. tacku
-		double x2 = 0; // g. sirine za 1. tacku
-		double y1 = 0; // g. duzina za 2. tacku
+		double x2 = 0; // g. duzina za 2. tacku
+		double y1 = 0; // g. sirina za 1. tacku
 		double y2 = 0; // g. sirina za 2. tacku
 		double R = 6371.01; // poluprecnik Zemlje
 		boolean q = true; // za while loop sa exceptionom
