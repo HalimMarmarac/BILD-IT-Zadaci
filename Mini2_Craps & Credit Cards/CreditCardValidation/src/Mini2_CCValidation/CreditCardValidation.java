@@ -140,12 +140,8 @@ public class CreditCardValidation extends JFrame {
 		line.setBounds(0, 100, 630, 3);
 		line.setBackground(Color.red);
 		background.add(line);
-		// creating and setting text field to accept max 16 characters
-		try {
-			cn = new JFormattedTextField(new MaskFormatter("****************"));
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
+		// creating text field to accept cc number
+		cn = new JTextField();
 		cn.setBounds(215, 210, 200, 40);
 		cn.setFont(new Font("Arial", Font.BOLD, 20));
 		background.add(cn);
@@ -166,7 +162,7 @@ public class CreditCardValidation extends JFrame {
 					num = Long.parseLong(cn.getText());
 				} catch (NumberFormatException nfe) {
 					JFrame info = new JFrame();
-					JOptionPane.showMessageDialog(info, "Text field only accepts Integer !");
+					JOptionPane.showMessageDialog(info, "Wrong input !!!");
 					q = false;
 				}
 				if (q) {
@@ -200,6 +196,12 @@ public class CreditCardValidation extends JFrame {
 					if ((sum1 + sum2) % 10 == 0) {
 						JFrame info = new JFrame();
 						JOptionPane.showMessageDialog(info, "Credit card number is valid!");
+						cn.setText("");
+					}
+					// cc number is invalid if it's shorter than 13 or longer than 16 cifers
+					else if ((digits.size() < 13) || (digits.size() > 16)) {
+						JFrame info = new JFrame();
+						JOptionPane.showMessageDialog(info, "Credit card number is invalid!");
 						cn.setText("");
 					}
 					// if sum of those sums are not divisible by 10 card is
