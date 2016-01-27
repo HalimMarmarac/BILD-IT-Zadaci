@@ -1,0 +1,20 @@
+﻿Zadaci
+
+1. (Izračunavanje napojnice) Napisati program koji učitava ukupan iznos računa koji treba uplatiti kao i procenat tog 
+računa kojeg želimo platiti kao napojnicu te izračunava ukupan račun i napojnicu. Na primjer, ukoliko korisnik unese 10 
+kao račun i 15 % kao procenat za napojnicu program treba da ispiše da je ukupan račun za uplatiti 11.5 a napojnica 1.5. 
+
+2. Napišite metodu sa sljedećim headerom koja vraća naopako ispisan broj koji joj je proslijeđen kao argument: 
+public static void reverse(int number). Na primjer, reverse(3456) treba da vrati 6543. Napisati program koji pita korisnika 
+da unese neki cijeli broj te mu vrati isti ispisan naopako. 
+
+3. Emirp brojevi (prime unazad) je nepalindromski prosti broj koji je prosti broj i kada ispišemo naopako. Na primjer, 
+broj 17 i broj 71 su prosti brojevi tako da su brojevi i 17 i 71 emirp brojevi. Napisati program koji ispisuje prvih 100 
+emirp brojeva, 10 brojeva po liniji. 
+
+4. Palindrome prime je prosti broj koji je također i palindrom. Na primjer, 131 je palindrome prime, kao i brojevi 313 i 757. 
+Napisati program koji ispisuje prvih 100 palindrome prime brojeva, 10 brojeva po liniji. 
+
+5. Pretpostavimo da kupujemo rižu ili neki drugi proizvod u dva različita pakovanja. Želimo napisati program koji upoređuje 
+cijene ta dva pakovanja. Program pita korisnika da unese težinu i cijenu oba pakovanja te ispisuje koje pakovanje ima bolju 
+cijenu.
