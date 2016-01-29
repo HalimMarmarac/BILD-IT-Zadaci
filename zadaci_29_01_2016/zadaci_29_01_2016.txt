@@ -1,0 +1,18 @@
+﻿Zadaci
+
+1. Napisati program koji nasumično generiše cijeli broj između 1 i 12 te ispisuje ime mjeseca za taj broj. 
+(Januar za 1, Ferbruar za 2....)
+
+2.  Napisati program koji igra sa protivnikom rock-paper-scissors. (papir-bunar-makaze ili tako nekako po naški) 
+Program nasumično generiše brojeve 0, 1 i 2 koji predstavljaju papir, bunar i makaze. Program pita korisnika da 
+unese 0, 1 ili 2 te mu ispisuje poruku da li je korisnik pobijedio, da li je računar pobijedio ili je bilo neriješeno. 
+
+3. Napisati program koji sabira sljedeću seriju 1/3 + 3/5 + 5/7 + 7/9 + 9/11 + 11/13 ..... + 95/97 + 97/99.
+
+4. Napisati metodu koja izračunava zbir svih brojeva u cijelom broju. Koristite sljedeći header: 
+public static int sumDigits(long n). 
+Na primjer, ako pozovemo metodu i proslijedimo joj broj 234 (sumDigits(234)) metoda treba da vrati 9. (2 + 3 + 4 = 9)
+
+5. Napisati metodu koja ispisuje n x n matricu koristeći se sljedećim headerom: public static void printMatrix(int n). 
+Svaki element u matrici je ili 0 ili 1, nasumično generisana. Napisati test program koji pita korisnika da unese broj n 
+te mu ispiše n x n matricu u konzoli. 
