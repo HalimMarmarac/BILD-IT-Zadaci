@@ -1,0 +1,16 @@
+﻿Zadaci
+
+1. Napisati program koji pita korisnika da unese cijeli trocifreni broj te provjerava da li je unijeti broj palindrom. 
+Broj je palindrom ukoliko se čita isto i sa lijeva na desno i sa desna na lijevo npr. 121, 131, itd.
+
+2. Napisati program koji pita korisnika da unese neki string te mu ispisuje dužinu tog stringa kao i prvo slovo stringa. 
+
+3. Napisati program koji pita korisnika da unese Social Security Number (SSN) u formatu DDD-DD-DDDD gdje D predstavlja 
+broj. Program treba da provjerava da li je broj unesešen u ispravnom formatu. Ukoliko nije, program pita korisnika da 
+pokuša ponovo. Ukoliko jeste unešen u pravom formatu, program završava sa radom.
+
+4. Napisati metodu koja vraća datum i trenutačno vrijeme.
+
+5. Napisati program koji pita korisnika da unese cijeli broj te ispisuje piramidu svih brojeva do tog broja. 
+(Na primjer, ukoliko korisnik unese 7 vrh piramide je broj 1, red ispod vrha piramide je 2 1 2, red ispod je 3 2 1 2 3, 
+red ispod 4 3 2 1 2 3 4 itd.)
