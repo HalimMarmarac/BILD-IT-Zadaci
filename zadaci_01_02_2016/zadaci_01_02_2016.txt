@@ -1,0 +1,18 @@
+﻿Zadaci 
+
+1. Napisati program koji prima ASCII kod (cijeli broj između 0 i 127) te ispisuje koji je to karakter. 
+Na primjer, ukoliko korisnik unese 69 kao ASCII kod, program mu ispisuje da je karakter sa tim brojem karakter E.
+
+2. Napisati program koji prima karakter te vraća njegov Unicode. Primjer: ukoliko korisnik unese karakter E program 
+mu vraća 69 kao unicode za taj karakter.
+
+3. U javi, short vrijednost se sprema u samo 16 bita. Napisati program koji pita korisnika da unese short broj te mu 
+ispiše svih 16 bita za dati cijeli broj. Na primjer, ukoliko korisnik unese broj 5 - program mu ispisuje 0000000000000101
+
+4. Napisati metodu sa sljedećim headerom: public static String format(int number, int width) koja vraća string broja sa 
+prefiksom od jedne ili više nula. Veličina stringa je width argument. Na primjer, ukoliko pozovemo metodu format(34, 4) 
+metoda vraća 0034, ukoliko pozovemo format(34, 5) metoda vraća 00034. Ukoliko je uneseni broj veći nego width argument, 
+metoda vraća samo string broja. Npr. ukoliko pozovemo format(34, 1) metoda vraća 34.
+
+5. Napisati program koji učitava 10 brojeva te ispisuje koilko je jedinstvenih brojeva unijeto te sve jedinstvene brojeve 
+koji su unijeti, razmaknute jednim spaceom. Ukoliko se neki broj pojavljuje više puta, broj treba ispisati samo jednom. 
