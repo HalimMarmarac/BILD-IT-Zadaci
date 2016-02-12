@@ -3,68 +3,41 @@ package zadaci_12_02_2016;
 import java.util.*;
 
 public class Zadatak2 {
-
-	// this is the method for removing duplicates, also used in last exercise
-	private static ArrayList<Integer> removeDuplicates(int[][] m) {
-
+	
+	public static ArrayList<Integer> removeDuplicates(ArrayList<Integer> factors) {
+		// creating new list
 		ArrayList<Integer> temp = new ArrayList<>();
-		for (int i = 0; i < m.length; i++) {
-			if (m[i][1] % 2 != 0) {
-				temp.add(m[i][0]);
+		// go through input list and if one element is added once do not add it again
+		for (int i = 0; i < factors.size(); i++) {
+			if (temp.contains(factors.get(i))) {
+				temp.remove(factors.get(i));
+				i++;
 			}
+			temp.add(factors.get(i));
 		}
-		// removing duplicates
-		ArrayList<Integer> duplicateRemoved = new ArrayList<>();
-		for (int i = 0; i < temp.size(); i++) {
-
-			if (!duplicateRemoved.contains(temp.get(i))) {
-				duplicateRemoved.add(temp.get(i));
-			}
-		}
-		return duplicateRemoved; // returns list with no duplicates
+		return temp;
 	}
 
 	// getting factors for integer m and adding them to list
-	private static void getFactors(int m, ArrayList<Integer> factors) {
+	private static ArrayList<Integer> getFactors(int m) {
 
+		ArrayList<Integer> temp = new ArrayList<Integer>();
 		int count = 2;
-		while (count <= m) {
+		while (m > 1) {
 			if (m % count == 0) {
-				factors.add(count);
+				temp.add(count);
 				m /= count;
 			} else {
 				count++;
 			}
 		}
-	}
-
-	// copy factors in 2d array
-	private static int[][] copy(ArrayList<Integer> factors) {
-
-		int[][] array = new int[factors.size()][2];
-		for (int i = 0; i < array.length; i++) {
-			array[i][0] = factors.get(i);
-		}
-		return array;
-	}
-
-	// going through 2d array with factors
-	private static void search(int[][] m, int number) {
-		for (int i = 0; i < m.length; i++) {
-			if (m[i][0] == number) {
-				m[i][1]++;
-			}
-		}
+		return temp;
 	}
 
 	private static int smallestSquare(ArrayList<Integer> factors) {
 
-		int[][] occurrences = copy(factors);
-		for (int i : factors) {
-			search(occurrences, i);
-		}
 		// remove duplicates and get odd sequence factors
-		ArrayList<Integer> oddSequenceFactors = removeDuplicates(occurrences);
+		ArrayList<Integer> oddSequenceFactors = removeDuplicates(factors);
 		// get smallest square by multiplying oddSequenceFactors
 		int smallestSquare = 1;
 		for (int i : oddSequenceFactors) {
@@ -91,10 +64,7 @@ public class Zadatak2 {
 			}
 		}
 		// list to store factors
-		ArrayList<Integer> factors = new ArrayList<>();
-		// get factors and store them to list
-		getFactors(m, factors);
-		// getting the square
+		ArrayList<Integer> factors = getFactors(m);
 		int smallestSquare = smallestSquare(factors);
 		// printing result
 		System.out.println("The smallest number n for m * n to be a perfect square is " + smallestSquare);
