@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="serviscss.css" rel="stylesheet" type="text/css" />
+
+<title>Servis</title>
+
+<div id="wrap">
+<div id="header"><img src="slike/logo1.png" alt="Servis" width="127" height="127"/></div>
+
+<div id="servis_menu">
+	<ul>
+          <li><a href="Servis.html">Početna</a><br /></li>
+          <li><a href="o_nama.html">O nama</a><br /></li>
+          <li><a href="usluge.html">Usluge</a><br /></li>
+          <li><a href="prodaja.html">Prodaja</a><br /></li>
+          <li><a href="kontakt.html">Kontakt</a><br /></li>
+	</ul>
+</div>
+
+</head>
+
+<body>
+
+<div id="body_top">&nbsp; <h2>KONTAKT</h2></div>
+
+<div id="body">
+<div id="contact">Adresa: Hajdarovac 53 
+</br>
+Grad: 75320 Gračanica
+</br>
+Država: Bosna i Hercegovina
+</br>
+Mob: +387 61 712 453
+</br>
+Tel: +387 35 705 047
+</br>
+E-mail: sehid.marmarac@gmail.com
+</br>
+
+<div id="map">
+    <script>
+    	var map;
+	var myLatLng = {lat: 44.69181796640309, lng: 18.306298613679246};
+      	function initMap() {
+        	map = new google.maps.Map(document.getElementById('map'), {
+         		center: {lat: 44.69181796640309, lng: 18.306298613679246},
+          		zoom: 12
+        		});
+		
+	var marker = new google.maps.Marker({
+   	position: myLatLng,
+    	map: map,
+    	title: 'SERVIS'
+  		});
+	}
+    </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?&callback=initMap" async defer></script>
+</div>
+</div>
+</div>
+
+<div id="body_bottom">&nbsp; Designed by Halim KC Marmarac (BILD-IT web project)</div>
+
+</body>
+</html>

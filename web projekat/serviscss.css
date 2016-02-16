@@ -1,0 +1,48 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+html { background:#fff; background-image:url(slike/1.jpg); margin:0; padding:0}
+body { margin:0 auto; padding:0; color:#000; font-family:Arial; font-size:14px; text-align:center; line-height:15px; }
+.clear {clear:both; }
+img { border:0px; }
+
+ul { margin:0px;padding:0px; list-style-type:none; }
+a { text-decoration:none; color:#064484; }
+a:hover { text-decoration:none; color:#2f6398; }
+
+
+h1,h2 { margin:0px;padding:0px;display:inline;}
+h1 { font-size:14px; color:#000; line-height:25px;}
+
+#wrap { margin:0 auto; width:945px; padding:0; display: table; }
+
+#header {height: 127px;text-align: left; width: 1200px; background-image:url(slike/elbkg.png); background-repeat: no-repeat; background-position: center; }
+
+
+#servis_menu { background-image:url(slike/menubar.png); width:1200px; background-repeat: no-repeat; height:35px; margin-top:0px; margin-bottom:20px; line-height:30px; padding-top:18px; }
+#servis_menu ul { font-size:15px; margin-left:30px; height:25px; }
+#servis_menu li { float:left; margin-top:0px; margin-right:50px; height:25px; line-height:25px; color:#fff; }
+#servis_menu li a { color:#fff; font-weight:normal; background-transparent; font-weight:bold; }
+#servis_menu li a:hover { color:#ffb400; }
+
+#body { width:1000px;  margin:0 auto; text-align:left; padding: 10px 30px; background:url(slike/1.png) repeat center top; height:100%; }
+#body_top { background-image:url(slike/top.jpg);  text-align:center; margin-left:5px; margin-top:-19px; margin-bottom:2px; height: 30px; width:1188px; padding-top:15px; }
+#body_bottom { background-image:url(slike/bottom.jpg);  text-align:center; margin-top:10px; margin-bottom:2px; height: 20px; width:1200px; padding-top:5px; }
+
+div#products { background-color:#FFFFFF; margin-left:5px; margin-top:80px; height:370px; width:500px; border: 1px solid #dedede; }
+div#brands { margin-left:640px; margin-top:-420px; }
+div#about { background-image:url(slike/txtbkg.jpg);  text-align:left; margin-left:10px; margin-top:2px; margin-bottom:20px; height: 300px; width:955px; border: 1px solid #dedede; padding-top:20px; padding-left:25px; }
+div#contact { background-image:url(slike/txtbkg.jpg);  text-align:left; margin-left:10px; margin-top:2px; margin-bottom:20px; height: 300px; width:955px; border: 1px solid #dedede; padding-top:40px; padding-left:25px;}
+div#map { float:left; margin-left:420px; margin-top:-110px; height: 300px; width:500px; }
+div#services { background-image:url(slike/txtbkg.jpg);  text-align:left; margin-left:10px; margin-top:2px; margin-bottom:20px; height: 300px; width:955px; border: 1px solid #dedede; padding-top:20px; padding-left:25px; }
+
+div#superior { margin-left:50px; margin-top:10px; height:400px; width:900px; }
+div#artikal1 { margin-left:-10px; margin-top:10px; height:200px; width:300px; }
+div#artikal2 { margin-left:340px; margin-top:-200px; height:200px; width:300px; }
+div#artikal3 { margin-left:700px; margin-top:-200px; height:200px; width:300px; }
+div#artikal4 { margin-left:-10px; margin-top:10px; height:200px; width:300px; }
+div#artikal5 { margin-left:340px; margin-top:-200px; height:200px; width:300px; }
+div#artikal6 { margin-left:700px; margin-top:-200px; height:200px; width:300px; }
+div#artikal7 { margin-left:-10px; margin-top:10px; height:200px; width:300px; }
+div#artikal8 { margin-left:340px; margin-top:-200px; height:200px; width:300px; }
+div#artikal9 { margin-left:700px; margin-top:-200px; height:200px; width:300px; }
