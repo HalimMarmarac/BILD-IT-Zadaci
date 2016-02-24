@@ -35,7 +35,7 @@ public class Zadatak5 {
 		}
 		System.out.println();
 		// test binarySearch
-		for (int i = 0; i < list.length + 4; i++) {
+		for (int i = 0; i < list.length + 5; i++) {
 			System.out.println("Broj " + i + " u nizu? -> " + ((binarySearch(list, i) >= 0) ? "DA" : "NE"));
 		}
 	}
