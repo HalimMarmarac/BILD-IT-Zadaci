@@ -45,7 +45,7 @@ public class Search extends JFrame {
 		input.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		input.setText("");
 		// postavljanje ikone za dugme za pretragu
-		ImageIcon i = new ImageIcon("src\\WebProject\\searchbtn.png");
+		ImageIcon i = new ImageIcon("src\\GroupProject\\searchbtn.png");
 		cont.add(searchButton = new JLabel());
 		searchButton.setSize(60, 60);
 		searchButton.setLocation(1050, 17);
