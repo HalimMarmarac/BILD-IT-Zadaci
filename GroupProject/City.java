@@ -1,4 +1,4 @@
-package WebProject;
+package GroupProject;
 
 // klasa City
 public class City {
