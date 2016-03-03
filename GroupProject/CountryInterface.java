@@ -1,4 +1,4 @@
-package WebProject;
+package GroupProject;
 
 import java.util.*;
 
