@@ -1,4 +1,4 @@
-package WebProject;
+package GroupProject;
 
 import java.sql.*;
 import java.util.*;
@@ -21,7 +21,7 @@ public class Countries implements CountryInterface {
 		}
 		return null;
 	}
-	// metoda za pretragu po imenu drûave
+	// metoda za pretragu po imenu dr≈æave
 	public ArrayList<Country> SearchCountryName(String Name) {
 		ArrayList<Country> countries = new ArrayList<Country>();
 		try {
@@ -63,7 +63,7 @@ public class Countries implements CountryInterface {
 		}
 		return countries;
 	}
-	// metoda koja vraÊa country code iz tabele city
+	// metoda koja vra√¶a country code iz tabele city
 	public ArrayList<String> SearchCountryCode(String Name) {
 		ArrayList<String> countrycode = new ArrayList<String>();
 		try {
@@ -80,7 +80,7 @@ public class Countries implements CountryInterface {
 		countrycode = removeDuplicates(countrycode);
 		return countrycode;
 	}
-	// metoda uz pomoÊ country code iz prethodne metode vraÊa drûave
+	// metoda uz pomo√¶ country code iz prethodne metode vra√¶a dr≈æave
 	public ArrayList<Country> SearchCountryCity(ArrayList<String> CountyCode) {
 		ArrayList<Country> countries = new ArrayList<Country>();
 		try {
@@ -103,7 +103,7 @@ public class Countries implements CountryInterface {
 		}
 		return countries;
 	}
-	// metoda vraÊa country code drûave iz tabele countrylanguage
+	// metoda vra√¶a country code dr≈æave iz tabele countrylanguage
 	public ArrayList<String> SearchCountryCode1(String Language) {
 		ArrayList<String> countrycode = new ArrayList<String>();
 		try {
@@ -120,7 +120,7 @@ public class Countries implements CountryInterface {
 		countrycode = removeDuplicates(countrycode);
 		return countrycode;
 	}
-	// metoda pomoÊu country code iz prethodne metode vraÊa drûave
+	// metoda pomo√¶u country code iz prethodne metode vra√¶a dr≈æave
 	public ArrayList<Country> SearchCountryLanguage(ArrayList<String> CountyCode) {
 		ArrayList<Country> countries = new ArrayList<Country>();
 		try {
@@ -143,7 +143,7 @@ public class Countries implements CountryInterface {
 		}
 		return countries;
 	}
-	// uklonja duplikate iz liste (county code u mom sluËaju)
+	// uklonja duplikate iz liste (county code u mom slu√®aju)
 	public static <E> ArrayList<E> removeDuplicates(ArrayList<E> list) {
 		ArrayList<E> newList = new ArrayList<>(list.size());
 		for (E aList : list) {
