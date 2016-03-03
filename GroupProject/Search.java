@@ -1,4 +1,4 @@
-package WebProject;
+package GroupProject;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -32,7 +32,7 @@ public class Search extends JFrame {
 		output.setEditable(false);
 		output.setBackground(Color.WHITE);
 		output.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		// dodavanje filtera u padajuæi izbornik
+		// dodavanje filtera u padajuÃ¦i izbornik
 		cont.add(filterChooser = new JComboBox<String>(filter));
 		filterChooser.setSize(380, 30);
 		filterChooser.setLocation(50, 35);
