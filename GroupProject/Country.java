@@ -1,4 +1,4 @@
-package WebProject;
+package GroupProject;
 
 // klasa Country
 public class Country {
