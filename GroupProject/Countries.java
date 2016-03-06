@@ -21,7 +21,7 @@ public class Countries implements CountryInterface {
 		}
 		return null;
 	}
-	// metoda za pretragu po imenu države
+	// metoda za pretragu po imenu drĹľave
 	public ArrayList<Country> SearchCountryName(String Name) {
 		ArrayList<Country> countries = new ArrayList<Country>();
 		try {
@@ -36,6 +36,7 @@ public class Countries implements CountryInterface {
 						result.getString("GovernmentForm"), result.getString("HeadOfState"), result.getInt("Capital"),
 						result.getString("Code2")));
 			}
+			connection.close();
 		} catch (Exception e) {
 			System.out.println(e.toString());
 			return null;
@@ -57,13 +58,14 @@ public class Countries implements CountryInterface {
 						result.getString("GovernmentForm"), result.getString("HeadOfState"), result.getInt("Capital"),
 						result.getString("Code2")));
 			}
+			connection.close();
 		} catch (Exception e) {
 			System.out.println(e.toString());
 			return null;
 		}
 		return countries;
 	}
-	// metoda koja vraæa country code iz tabele city
+	// metoda koja vraĂ¦a country code iz tabele city
 	public ArrayList<String> SearchCountryCode(String Name) {
 		ArrayList<String> countrycode = new ArrayList<String>();
 		try {
@@ -73,14 +75,14 @@ public class Countries implements CountryInterface {
 			while (result.next()) {
 				countrycode.add(result.getString("CountryCode"));
 			}
+			connection.close();
 		} catch (Exception e) {
 			System.out.println(e.toString());
 			return null;
 		}
-		countrycode = removeDuplicates(countrycode);
 		return countrycode;
 	}
-	// metoda uz pomoæ country code iz prethodne metode vraæa države
+	// metoda uz pomoĂ¦ country code iz prethodne metode vraĂ¦a drĹľave
 	public ArrayList<Country> SearchCountryCity(ArrayList<String> CountyCode) {
 		ArrayList<Country> countries = new ArrayList<Country>();
 		try {
@@ -97,15 +99,22 @@ public class Countries implements CountryInterface {
 							result.getString("Code2")));
 				}
 			}
+			connection.close();
 		} catch (Exception e) {
 			System.out.println(e.toString());
 			return null;
 		}
 		return countries;
 	}
-	// metoda vraæa country code države iz tabele countrylanguage
+<<<<<<< HEAD
+	// metoda vraća country code države iz tabele countrylanguage
+	public HashSet<String> SearchCountryCode1(String Language) {
+		HashSet<String> countrycode = new HashSet<String>();
+=======
+	// metoda vraĂ¦a country code drĹľave iz tabele countrylanguage
 	public ArrayList<String> SearchCountryCode1(String Language) {
 		ArrayList<String> countrycode = new ArrayList<String>();
+>>>>>>> origin/master
 		try {
 			Connection connection = getConnected("world");
 			PreparedStatement statement = connection.prepareStatement("SELECT * FROM countrylanguage WHERE Language LIKE '%"+Language+"%';");
@@ -113,15 +122,20 @@ public class Countries implements CountryInterface {
 			while (result.next()) {
 				countrycode.add(result.getString("CountryCode"));
 			}
+			connection.close();
 		} catch (Exception e) {
 			System.out.println(e.toString());
 			return null;
 		}
-		countrycode = removeDuplicates(countrycode);
 		return countrycode;
 	}
-	// metoda pomoæu country code iz prethodne metode vraæa države
+<<<<<<< HEAD
+	// metoda pomoću country code iz prethodne metode vraća države
+	public ArrayList<Country> SearchCountryLanguage(HashSet<String> CountyCode) {
+=======
+	// metoda pomoĂ¦u country code iz prethodne metode vraĂ¦a drĹľave
 	public ArrayList<Country> SearchCountryLanguage(ArrayList<String> CountyCode) {
+>>>>>>> origin/master
 		ArrayList<Country> countries = new ArrayList<Country>();
 		try {
 			Connection connection = getConnected("world");
@@ -137,13 +151,16 @@ public class Countries implements CountryInterface {
 							result.getString("Code2")));
 				}
 			}
+			connection.close();
 		} catch (Exception e) {
 			System.out.println(e.toString());
 			return null;
 		}
 		return countries;
 	}
-	// uklonja duplikate iz liste (county code u mom sluèaju)
+<<<<<<< HEAD
+=======
+	// uklonja duplikate iz liste (county code u mom sluĂ¨aju)
 	public static <E> ArrayList<E> removeDuplicates(ArrayList<E> list) {
 		ArrayList<E> newList = new ArrayList<>(list.size());
 		for (E aList : list) {
@@ -153,5 +170,6 @@ public class Countries implements CountryInterface {
 		}
 		return newList;
 	}
+>>>>>>> origin/master
 	
 }
