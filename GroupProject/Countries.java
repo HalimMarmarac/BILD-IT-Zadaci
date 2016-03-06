@@ -21,7 +21,7 @@ public class Countries implements CountryInterface {
 		}
 		return null;
 	}
-	// metoda za pretragu po imenu drĹľave
+	// metoda za pretragu po imenu dr�ave
 	public ArrayList<Country> SearchCountryName(String Name) {
 		ArrayList<Country> countries = new ArrayList<Country>();
 		try {
@@ -65,7 +65,7 @@ public class Countries implements CountryInterface {
 		}
 		return countries;
 	}
-	// metoda koja vraĂ¦a country code iz tabele city
+	// metoda koja vra�a country code iz tabele city
 	public ArrayList<String> SearchCountryCode(String Name) {
 		ArrayList<String> countrycode = new ArrayList<String>();
 		try {
@@ -82,7 +82,7 @@ public class Countries implements CountryInterface {
 		}
 		return countrycode;
 	}
-	// metoda uz pomoĂ¦ country code iz prethodne metode vraĂ¦a drĹľave
+	// metoda uz pomo� country code iz prethodne metode vra�a dr�ave
 	public ArrayList<Country> SearchCountryCity(ArrayList<String> CountyCode) {
 		ArrayList<Country> countries = new ArrayList<Country>();
 		try {
@@ -106,15 +106,9 @@ public class Countries implements CountryInterface {
 		}
 		return countries;
 	}
-<<<<<<< HEAD
-	// metoda vraća country code države iz tabele countrylanguage
+	// metoda vra�a country code dr�ave iz tabele countrylanguage
 	public HashSet<String> SearchCountryCode1(String Language) {
 		HashSet<String> countrycode = new HashSet<String>();
-=======
-	// metoda vraĂ¦a country code drĹľave iz tabele countrylanguage
-	public ArrayList<String> SearchCountryCode1(String Language) {
-		ArrayList<String> countrycode = new ArrayList<String>();
->>>>>>> origin/master
 		try {
 			Connection connection = getConnected("world");
 			PreparedStatement statement = connection.prepareStatement("SELECT * FROM countrylanguage WHERE Language LIKE '%"+Language+"%';");
@@ -129,13 +123,8 @@ public class Countries implements CountryInterface {
 		}
 		return countrycode;
 	}
-<<<<<<< HEAD
-	// metoda pomoću country code iz prethodne metode vraća države
+	// metoda pomo�u country code iz prethodne metode vra�a dr�ave
 	public ArrayList<Country> SearchCountryLanguage(HashSet<String> CountyCode) {
-=======
-	// metoda pomoĂ¦u country code iz prethodne metode vraĂ¦a drĹľave
-	public ArrayList<Country> SearchCountryLanguage(ArrayList<String> CountyCode) {
->>>>>>> origin/master
 		ArrayList<Country> countries = new ArrayList<Country>();
 		try {
 			Connection connection = getConnected("world");
@@ -158,18 +147,5 @@ public class Countries implements CountryInterface {
 		}
 		return countries;
 	}
-<<<<<<< HEAD
-=======
-	// uklonja duplikate iz liste (county code u mom sluĂ¨aju)
-	public static <E> ArrayList<E> removeDuplicates(ArrayList<E> list) {
-		ArrayList<E> newList = new ArrayList<>(list.size());
-		for (E aList : list) {
-			if (!newList.contains(aList)) {
-				newList.add(aList);
-			}
-		}
-		return newList;
-	}
->>>>>>> origin/master
 	
 }
