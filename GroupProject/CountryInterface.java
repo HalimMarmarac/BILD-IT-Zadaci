@@ -8,7 +8,7 @@ public interface CountryInterface {
 	public ArrayList<Country> SearchCountryPopulation(long Population);
 	public ArrayList<String> SearchCountryCode(String Name);
 	public ArrayList<Country> SearchCountryCity(ArrayList<String> CountyCode);
-	public ArrayList<String> SearchCountryCode1(String Language);
-	public ArrayList<Country> SearchCountryLanguage(ArrayList<String> CountyCode);
+	public HashSet<String> SearchCountryCode1(String Language);
+	public ArrayList<Country> SearchCountryLanguage(HashSet<String> CountyCode);
 
 }
